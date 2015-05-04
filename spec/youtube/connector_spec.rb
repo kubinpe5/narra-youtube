@@ -100,11 +100,11 @@ describe 'object_youtube_connector' do
     #test liveBroadcastContent
     expect(@data['liveBroadcastContent']).to match('none')
     #test viewCount
-    #expect(@data['viewCount']).to match('85577')
+    expect(@data['viewCount']).to be > "85577"
     #test likeCount
-    expect(@data['likeCount']).to match('113')
+    expect(@data['likeCount']).to be > "112"
     #test dislikeCount
-    expect(@data['dislikeCount']).to match('13')
+    expect(@data['dislikeCount']).to be > "12"
     #test favouriteCount
     expect(@data['favouriteCount']).nil?
     #test commentCount
@@ -148,11 +148,11 @@ describe 'object_youtube_connector' do
     #test liveBroadcastContent
     expect(@data1['liveBroadcastContent']).to match('none')
     #test viewCount
-    #expect(@data1['viewCount']).to match('9622')
+    expect(@data1['viewCount']).to be > "9622"
     #test likeCount
-    expect(@data1['likeCount']).to match('84')
+    expect(@data1['likeCount']).to be > "80"
     #test dislikeCount
-    expect(@data1['dislikeCount']).to match('17')
+    expect(@data1['dislikeCount']).to be > "16"
     #test favouriteCount
     expect(@data1['favouriteCount']).nil?
     #test commentCount
@@ -205,9 +205,9 @@ describe 'object_youtube_connector' do
     #test liveBroadcastContent
     expect(@data3['liveBroadcastContent']).to match('none')
     #test viewCount
-    #expect(@data3['viewCount']).to match('13302')
+    expect(@data3['viewCount']).to be > "13300"
     #test likeCount
-    expect(@data3['likeCount']).to match('284')
+    expect(@data3['likeCount']).to be > "280"
     #test dislikeCount
     expect(@data3['dislikeCount']).to match('4')
     #test favouriteCount
