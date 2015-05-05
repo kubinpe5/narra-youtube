@@ -102,13 +102,13 @@ describe 'object_youtube_connector' do
     #test viewCount
     expect(@data['viewCount']).to be > "85577"
     #test likeCount
-    expect(@data['likeCount']).to be > "112"
+    expect(@data['likeCount']).to be > "100"
     #test dislikeCount
-    expect(@data['dislikeCount']).to be > "12"
+    expect(@data['dislikeCount']).to be > "0"
     #test favouriteCount
     expect(@data['favouriteCount']).nil?
     #test commentCount
-    expect(@data['commentCount']).to match('7')
+    expect(@data['commentCount']).to be > "5"
     #test duration
     expect(@data['duration']).to match('PT24M41S')
     #test dimension
@@ -150,13 +150,13 @@ describe 'object_youtube_connector' do
     #test viewCount
     expect(@data1['viewCount']).to be > "9622"
     #test likeCount
-    expect(@data1['likeCount']).to be > "80"
+    expect(@data1['likeCount']).to be > "70"
     #test dislikeCount
-    expect(@data1['dislikeCount']).to be > "16"
+    expect(@data1['dislikeCount']).to be > "10"
     #test favouriteCount
     expect(@data1['favouriteCount']).nil?
     #test commentCount
-    expect(@data1['commentCount']).to match('935')
+    expect(@data1['commentCount']).to be > "900"
     #test duration
     expect(@data1['duration']).to match('PT1H3M')
     #test dimension
@@ -209,11 +209,11 @@ describe 'object_youtube_connector' do
     #test likeCount
     expect(@data3['likeCount']).to be > "280"
     #test dislikeCount
-    expect(@data3['dislikeCount']).to match('4')
+    expect(@data3['dislikeCount']).to be > "0"
     #test favouriteCount
     expect(@data3['favouriteCount']).nil?
     #test commentCount
-    expect(@data3['commentCount']).to match('23')
+    expect(@data3['commentCount']).to be > "15"
     #test duration
     expect(@data3['duration']).to match('PT1M33S')
     #test dimension
