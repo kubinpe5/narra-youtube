@@ -85,7 +85,7 @@ module Narra
       # returns @youtube (json object)
       def initialize(url, key = '')
         unless key != ''
-          @mykey = "AIzaSyBVYtP85g7VCilGKbzkQqPCf8CxokAfvhU"
+          @mykey = ""
         else
           @mykey = key
         end
